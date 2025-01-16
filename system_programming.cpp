@@ -126,6 +126,28 @@ void task2_11() {
     cout << "Периметр треугольника = " << p << endl;
 }
 
+void task2_12() {
+
+    //Инициализация координат
+    double ax, bx, cx, ay, by, cy;
+    cout << "Введите координаты первой точки:\n";
+    cin >> ax >> ay;
+    cout << "Введите координаты второй точки:\n";
+    cin >> bx >> by;
+    cout << "Введите координаты третьей точки:\n";
+    cin >> cx >> cy;
+
+    //Вычисление сторон
+    double distance1 = sqrt(pow(ax - bx, 2) + pow(ay - by, 2));
+    double distance2 = sqrt(pow(bx - cx, 2) + pow(by - cy, 2));
+    double distance3 = sqrt(pow(ax - cx, 2) + pow(ay - cy, 2));
+
+    //Вычисление периметра
+    double p = (distance1 + distance2 + distance3)/2;
+    double s = sqrt(p * (p - distance1) * (p - distance2) * (p - distance3));
+    cout << "Площадь треугольника = " << s << endl;
+}
+
 int main()
 {
     setlocale(LC_ALL, "rus"); //задаем кодировку
@@ -143,7 +165,8 @@ int main()
     //task2_8();
     //task2_9();
     //task2_10();
-    task2_11();
+    //task2_11();
+    task2_12();
 
 
     //cout << "Блок III\n";
