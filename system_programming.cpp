@@ -105,7 +105,7 @@ void task2_10() {
     cout << "Ребро куба = " << a << endl;
 }
 
-void task2_11() {//НЕ ЗАВЕРШЕНА
+void task2_11() {
 
     //Инициализация координат
     double ax, bx, cx, ay, by, cy;
@@ -118,10 +118,12 @@ void task2_11() {//НЕ ЗАВЕРШЕНА
 
     //Вычисление сторон
     double distance1 = sqrt(pow(ax - bx, 2) + pow(ay - by, 2));
+    double distance2 = sqrt(pow(bx - cx, 2) + pow(by - cy, 2));
+    double distance3 = sqrt(pow(ax - cx, 2) + pow(ay - cy, 2));
 
-    //Вычисление периметра
-   /* double p;
-    cout << "Периметр треугольника = " << p << endl;*/
+   // Вычисление периметра
+    double p = distance1 + distance2 + distance3;
+    cout << "Периметр треугольника = " << p << endl;
 }
 
 int main()
