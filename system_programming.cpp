@@ -292,6 +292,103 @@ void task2_20() {
     cout << "Сумма первых " << n << " членов геометрической прогрессии = " << s << endl;
 }
 
+void task3_1() {
+    //Инициализация
+    double a, b;
+    cout << "Введите два числа:\n";
+    cin >> a >> b;
+
+    //Вычисление
+    cout << "Большее из введенных чисел: ";
+    if (a > b)
+        cout << a;
+    else if (b > a)
+        cout << b;
+    else
+        cout << a << endl << "т.к. числа равны";
+    cout << endl;
+}
+
+void task3_2and3() {
+    //Инициализация
+    int a;
+    cout << "Введите целое число:\n";
+    cin >> a;
+
+    //Вычисление
+    if (a % 2 == 0)
+        cout << "Число чётное";
+    else
+        cout << "Число нечётное";
+    cout << endl;
+}
+void task3_4() {
+    //Инициализация
+    int m, n;
+    cout << "Введите два целых числа: ";
+    cin >> m >> n;
+
+    //Вычисление
+    if (m % n == 0)
+        cout << "Остаток от деления m на n: " << m / n << endl;
+    else
+        cout << "Число m на n нацело не делится" << endl;
+}
+
+void task3_5() {
+    //Инициализация
+    int m;
+    cout << "Введите одно целое число: ";
+    cin >> m;
+
+    //Вычисление
+    if (m % 10 == 7)
+        cout << "да" << endl;
+    else
+        cout << "нет" << endl;
+}
+
+void task3_6() {
+    //Инициализация
+    double a, b, c;
+    cout << "Введите три числа: ";
+    cin >> a >> b >> c;
+    double x;
+
+    //Вычисление
+    if (a == 0) {
+        if (b == 0) {
+            if (c == 0) {
+                cout << "бесконечное количество корней" << endl;
+                return;
+            }
+            else {
+                cout << "Нет решений";
+                return;
+            }
+                
+        }
+        else
+        {
+            x = -c / b;
+        }
+    }
+    else {
+        double d = b * b - 4 * a * c;
+        if (d > 0) {
+            double x1 = (-b + sqrt(d)) / (2 * a);
+            double x2 = (-b - sqrt(d)) / (2 * a);
+            cout << "x1 = " << x1 << "\nx2 = " << x2 << endl;
+        }
+        else if (d == 0) {
+            x = -b / (2 * a);
+            cout << "x = " << x << endl;
+        }
+        else
+            cout << "Корней нет" << endl;
+    }
+}
+
 int main()
 {
     setlocale(LC_ALL, "rus"); //задаем кодировку
@@ -301,7 +398,7 @@ int main()
     task1_1();*/
 
 
-    cout << "Блок II\n";
+    /*cout << "Блок II\n";
     task2_1();
     task2_2();
     task2_3();
@@ -321,9 +418,14 @@ int main()
     task2_17();
     task2_18();
     task2_19();
-    task2_20();
+    task2_20();*/
 
-    //cout << "Блок III\n";
+    cout << "Блок III\n";
+    //task3_1();
+    //task3_2and3();
+    //task3_4();
+    //task3_5();
+    task3_6();
 
 
     system("pause");
