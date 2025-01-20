@@ -371,6 +371,7 @@ void task3_6() {
         else
         {
             x = -c / b;
+            cout << "x = " << x << endl;
         }
     }
     else {
@@ -387,6 +388,10 @@ void task3_6() {
         else
             cout << "Корней нет" << endl;
     }
+}
+
+void task3_7__12() {
+
 }
 
 int main()
