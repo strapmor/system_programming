@@ -16,36 +16,131 @@ double to_radians(double x) {
 
 void task1_1() {
     //Ввод x
-    std::cout << "Задание 1:\nВведите x: ";
+    cout << "Задание 1:\nВведите x: ";
     double x;
-    std::cin >> x;
+    cin >> x;
 
     //Вычисление
     x = (10 * sin(x)) + abs(pow(x, 4) - pow(x, 5));
-    std::cout << x;
+    cout << "Ответ: " << x << endl;
+}
+
+void task1_2() {
+    //Инициализация
+    cout << "Задание 2:\nВведите x и y:\n";
+    double x, y;
+    cin >> x >> y;
+
+    //Вычисление
+    cout << "Ответ: " << ( pow(M_E, -x) - cos(to_radians(x))+sin(to_radians(2*x*y)) ) << endl;
+}
+
+void task1_3() {
+    //Ввод x
+    cout << "Задание 3:\nВведите x: ";
+    double x;
+    cin >> x;
+
+    //Вычисление
+    x = sqrt(pow(x, 4) + sqrt(abs(x + 1)));
+    cout << "Ответ: " << x << endl;
+}
+
+void task1_4() {
+    //Инициализация
+    cout << "Задание 4:\nВведите x и y:\n";
+    double x, y;
+    cin >> x >> y;
+
+    //Вычисление
+    cout << "Ответ: " << ((sin(to_radians(x)) + cos(to_radians(y))) / (cos(to_radians(x)) - sin(to_radians(y)))) * tan(to_radians(x * y)) << endl;
+}
+
+void task1_5() {
+    //Ввод x
+    cout << "Задание 5:\nВведите x: ";
+    double x;
+    cin >> x;
+
+    //Вычисление
+    x = (0.125 * x + abs(sin(to_radians(x)))) / (1.5 * x * x + cos(to_radians(x)));
+    cout << "Ответ: " << x << endl;
+}
+
+void task1_6() {
+    //Инициализация
+    cout << "Задание 6:\nВведите x и y:\n";
+    double x, y;
+    cin >> x >> y;
+
+    //Вычисление
+    cout << "Ответ: " << ((x + y) / (x + 1)) - ((x * y - 12) / (34 + x)) << endl;
+}
+
+void task1_7() {
+    //Инициализация
+    cout << "Задание 7:\nВведите x и y:\n";
+    double x, y;
+    cin >> x >> y;
+
+    //Вычисление
+    cout << "Ответ: " << (sin(to_radians(x)) + cos(to_radians(y))) / (cos(to_radians(x)) - sin(to_radians(y))) * (tan(to_radians(x * y))) << endl;
+}
+
+void task1_8() {
+    //Инициализация
+    cout << "Задание 8:\nВведите x и y:\n";
+    double x, y;
+    cin >> x >> y;
+
+
+    //Вычисление
+    cout << "Ответ: " << (1 + pow(M_E, y - 1)) / (1 + x * x * abs(y - tan(to_radians(x)))) << endl;
+}
+
+void task1_9() {
+    //Инициализация
+    cout << "Задание 9:\nВведите x:\n";
+    double x;
+    cin >> x;
+
+
+    //Вычисление
+    cout << "Ответ: " << abs(pow(x, 3) - pow(x, 2)) - ((7 * x) / (pow(x, 3) - 15 * x)) << endl;
+}
+
+void task1_10() {
+    //Инициализация
+    cout << "Задание 9:\nВведите x:\n";
+    double x;
+    cin >> x;
+
+
+    //Вычисление
+    cout << "Ответ: " << 1+(x/3)+abs(x)+(pow(x, 3) + 4)/2 << endl;
 }
 
 void task2_1() {
     //Ввод x
-    std::cout << "Задание 1:\nВведите площадь квадрата: ";
+    cout << "Задание 1:\nВведите площадь квадрата: ";
     double x;
     std::cin >> x;
 
     //Вычисление
     x = sqrt(x) * 4;
-    std::cout << "Периметр квадрата = " << x;
+    cout << "Периметр квадрата = " << x;
 }
 
 void task2_2() {
     //Ввод x
-    std::cout << "Задание 2:\nВведите периметр равностороннего треугольника: ";
+    cout << "Задание 2:\nВведите периметр равностороннего треугольника: ";
     double x;
-    std::cin >> x;
+    cin >> x;
 
     //Вычисление
     x /= 3;
     x = (x * x * sqrt(3)) / 4;
-    std::cout << "Площадь квадрата = " << x;
+    cout << "Площадь квадрата = " << x;
 }
 
 void task2_3() {
@@ -499,8 +594,18 @@ int main()
     setlocale(LC_ALL, "rus"); //задаем кодировку
 
    
-    /*cout << "Блок I\n";
-    task1_1();*/
+    cout << "Блок I\n";
+    //task1_1();
+    //task1_2();
+    //task1_3();
+    //task1_4();
+    //task1_5();
+    //task1_6();
+    //task1_7();
+    //task1_8();
+    //task1_9();
+    task1_10();
+
 
 
     /*cout << "Блок II\n";
@@ -525,7 +630,7 @@ int main()
     task2_19();
     task2_20();*/
 
-    cout << "Блок III\n";
+    //cout << "Блок III\n";
     //task3_1();
     //task3_2and3();
     //task3_4();
@@ -533,8 +638,7 @@ int main()
     //task3_6();
     //task3_7__12();
     //task3_13__16();
-    task3_17__20();
-
+    //task3_17__20();
 
 
     system("pause");
