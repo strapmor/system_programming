@@ -111,13 +111,123 @@ void task1_9() {
 
 void task1_10() {
     //Инициализация
-    cout << "Задание 9:\nВведите x:\n";
+    cout << "Задание 10:\nВведите x:\n";
     double x;
     cin >> x;
 
 
     //Вычисление
     cout << "Ответ: " << 1+(x/3)+abs(x)+(pow(x, 3) + 4)/2 << endl;
+}
+
+void task1_11() {
+    //Инициализация
+    cout << "Задание 11:\nВведите x:\n";
+    double x;
+    cin >> x;
+
+
+    //Вычисление
+    cout << "Ответ: " << (log(abs(cos(to_radians(x))))) / (log(1 + x * x)) << endl;
+}
+
+void task1_12() {
+    //Инициализация
+    cout << "Задание 12:\nВведите x и y:\n";
+    double x, y;
+    cin >> x >> y;
+
+
+    //Вычисление
+    cout << "Ответ: " << (1 + sin(to_radians(sqrt(x + 1)))) / (cos(to_radians(12 * y - 4))) << endl;
+}
+
+void task1_13() {
+    //Инициализация
+    cout << "Задание 13:\nВведите a и b:\n";
+    double a, b;
+    cin >> a >> b;
+
+
+    //Вычисление
+    cout << "Ответ: " << (a * a + b * b) / (1 - ((pow(a, 3) - b) / 3)) << endl;
+}
+
+void task1_14() {
+    //Инициализация
+    cout << "Задание 14:\nВведите x и y:\n";
+    double x, y;
+    cin >> x >> y;
+
+
+    //Вычисление
+    cout << "Ответ: " << (1 + pow(sin(to_radians(x + y)), 2)) / (2 + abs(x - ((2 * x) / (1 + x * x * y * y)))) + x << endl;
+}
+
+void task1_15() {
+    //Инициализация
+    cout << "Задание 15:\nВведите x и y:\n";
+    double x, y;
+    cin >> x >> y;
+
+
+    //Вычисление
+    cout << "Ответ: " << x * log(x) + y / (cos(to_radians(x)) - (x / 3)) << endl;
+}
+
+void task1_16() {
+    //Инициализация
+    cout << "Задание 16:\nВведите x и y:\n";
+    double x, y;
+    cin >> x >> y;
+
+
+    //Вычисление
+    cout << "Ответ: " << sin(to_radians(sqrt(x + 1))) - sin(to_radians(sqrt(x - 1))) << endl;
+}
+
+void task1_17() {
+    //Инициализация
+    cout << "Задание 17:\nВведите x и y:\n";
+    double x, y;
+    cin >> x >> y;
+
+
+    //Вычисление
+    cout << "Ответ: " << (cos(to_radians(x))) / (M_PI - 2 * x) + 16 * x * cos(to_radians(x * y)) << endl;
+}
+
+void task1_18() {
+    //Инициализация
+    cout << "Задание 18:\nВведите x и y:\n";
+    double x, y;
+    cin >> x >> y;
+
+
+    //Вычисление
+    cout << "Ответ: " << 2 * (1 / tan(to_radians(3 * x))) - (1) / (12 * x * x + 7 * x - 5) << endl;
+}
+
+void task1_19() {
+    //Инициализация
+    cout << "Задание 19:\nВведите a, b и c:\n";
+    double a, b, c;
+    cin >> a >> b >> c;
+
+
+    //Вычисление
+    cout << "Ответ: " << (b + sqrt(b * b + 4 * a * c)) / (2 * a) - pow(a, 3) + pow(b, -2) << endl;
+}
+
+void task1_20() {
+    //Инициализация
+    cout << "Задание 20:\nВведите x и y:\n";
+    double x, y;
+    cin >> x >> y;
+
+
+    //Вычисление
+    cout << "Ответ: " << log(abs((y - sqrt(abs(x))) * (x - y / (x + (x * x / 4))))) << endl;
 }
 
 void task2_1() {
@@ -595,16 +705,26 @@ int main()
 
    
     cout << "Блок I\n";
-    //task1_1();
-    //task1_2();
-    //task1_3();
-    //task1_4();
-    //task1_5();
-    //task1_6();
-    //task1_7();
-    //task1_8();
-    //task1_9();
+    task1_1();
+    task1_2();
+    task1_3();
+    task1_4();
+    task1_5();
+    task1_6();
+    task1_7();
+    task1_8();
+    task1_9();
     task1_10();
+    task1_11();
+    task1_12();
+    task1_13();
+    task1_14();
+    task1_15();
+    task1_16();
+    task1_17();
+    task1_18();
+    task1_19();
+    task1_20();
 
 
 
@@ -630,15 +750,15 @@ int main()
     task2_19();
     task2_20();*/
 
-    //cout << "Блок III\n";
-    //task3_1();
-    //task3_2and3();
-    //task3_4();
-    //task3_5();
-    //task3_6();
-    //task3_7__12();
-    //task3_13__16();
-    //task3_17__20();
+    cout << "Блок III\n";
+    task3_1();
+    task3_2and3();
+    task3_4();
+    task3_5();
+    task3_6();
+    task3_7__12();
+    task3_13__16();
+    task3_17__20();
 
 
     system("pause");
