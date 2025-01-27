@@ -601,7 +601,7 @@ void task3_7__12() {
     int x;
     cin >> x;
     x = abs(x);
-    while (x > 99 || x < -99) {
+    while (x > 99 || x < -99 || (x >= -9 && x <= 9)) {
         cout << "Число не двухзначное, введите снова: ";
         cin >> x;
     }
@@ -633,6 +633,8 @@ void task3_7__12() {
     cin >> y;
     if (x % y == 0)
         cout << "Сумма цифр кратна введённому числу" << endl;
+    else
+        cout << "Сумма цифр не кратна введённому числу" << endl;
 }
 
 void task3_13__16() {
@@ -640,7 +642,7 @@ void task3_13__16() {
     int x;
     cin >> x;
     x = abs(x);
-    while (x > 999 || x < -999) {
+    while (x > 999 || x < -999 || (x >= -99 && x <= 99)) {
         cout << "Число не трёхзначное, введите снова: ";
         cin >> x;
     }
@@ -704,7 +706,7 @@ int main()
     setlocale(LC_ALL, "rus"); //задаем кодировку
 
    
-    cout << "Блок I\n";
+    /*cout << "Блок I\n";
     task1_1();
     task1_2();
     task1_3();
@@ -724,7 +726,7 @@ int main()
     task1_17();
     task1_18();
     task1_19();
-    task1_20();
+    task1_20();*/
 
 
 
@@ -751,14 +753,14 @@ int main()
     task2_20();*/
 
     cout << "Блок III\n";
-    task3_1();
-    task3_2and3();
-    task3_4();
-    task3_5();
-    task3_6();
+    //task3_1();
+    //task3_2and3();
+    //task3_4();
+    //task3_5();
+    //task3_6();
     task3_7__12();
     task3_13__16();
-    task3_17__20();
+    //task3_17__20();
 
 
     system("pause");
